@@ -1,8 +1,10 @@
-# pod-skills
+# pod-config
 
-Curated, dependency-free Claude Code skills for a remote/containerized agent
-(e.g. OpenAB on Kubernetes). Pure-instruction skills only — no MCP, no external
-binaries, no credentials. Auto-synced into the pod's `~/.claude/skills` on boot.
+Dependency-free Claude Code config for a remote/containerized agent (OpenAB on K8s).
+Auto-synced into the pod on boot via an init container.
 
-Skills: ponytail (+audit/review/debt/gain/help), pyramid-principle, co-architect,
-wiring-check, blue-lobster, capture-skill, huashu-nuwa.
+- `AGENTS.md` — the pod's identity (CEO + multi-role org, working rules)
+- `agents/` — native subagent definitions (CEO, COO, CTO, CFO, CMO, dev, qa, designer, PM, etc.)
+- `skills/` — pure-instruction skills (ponytail, pyramid-principle, co-architect, yc-pipeline, ...)
+
+All de-identified. No MCP, no credentials, no personal data.
